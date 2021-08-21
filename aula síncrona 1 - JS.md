@@ -10,3 +10,6 @@
 3. const: local e inalterável.
 
 - é uma boa prática as variáveis começarem com a letra minúscula.
+
+# 21/08
+

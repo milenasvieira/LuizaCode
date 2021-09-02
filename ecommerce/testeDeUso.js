@@ -43,3 +43,23 @@ gamaStore.addProduct(new Product({
 }));
 
 console.log(gamaStore)
+
+const Ecommerce = require("./ecommerce");
+
+//cria um ecommerce
+const ecommerce = new Ecommerce();
+
+//cria um usuario do ecommerce
+ecommerce.createUser({
+    name: "Milena Vieira",
+    email: "milenasvieira63@gmail.com",
+    password: "123456"
+})
+
+//logar um usuário no ecommerce
+
+//adiciona livros ao ecommerce
+
+//adiciona livros ao carrinho de um usuário logado
+
+//fazer checkout do carrinho do usuário

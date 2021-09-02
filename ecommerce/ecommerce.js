@@ -1,14 +1,16 @@
-class Ecommerce {
-    products
-    logedUsers
+const User = require("./user"); //mais raro de ser usado
 
-    constructor(products) {
-        this.products = products
+class Ecommerce {
+    registeredUsers = []
+
+    createUser(user) {
+        const newUser = new User(user);
+        this.registeredUsers.push(newUser);
     }
 
-    addProduct(product){
-        this.products.push(product)
+    login = (email, password) => {
+        console.log(email, password)
     }
 }
 
-moduleexports.Ecommerce = Ecommerce
+module.exports = Ecommerce //mais raro de ser usado
